@@ -5,22 +5,29 @@
   /* Style the body*/
 body {
     font-family: 'Fredoka', sans-serif;
-    font-size: 16px;
     font-weight: 400; 
     margin: 0; 
     margin-top: 50px;
+      
   }
     
   h1 {
+    
+    color: #9300F4;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 15px;
     font-weight: 100; 
-    font-size: 2.5em;
-    font-family: 'Oi', cursive;
-    letter-spacing: 5px;
+    font-size: 75px;
+    text-align: center;
   }
     
   h2 {
+    font-weight: 100; 
+    font-size: 50px;
+    font-family: 'Oi', cursive;
+    letter-spacing: 5px;
     color: #9300F4;
-    font-family: 'Shrikhand', cursive;
+    
   }
     
   h3 {
@@ -31,12 +38,14 @@ body {
   
   h5 {
     font-family: 'Fredoka', sans-serif;
+    color: white;
   }
     
   ul, li, p {
     font-family: 'Fredoka', sans-serif;
     font-weight: 400;
     font-style: italic;
+    color: white;
   }
   
   .flex-container {
@@ -48,7 +57,7 @@ body {
   /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #240046;
+    
   }
       
   /* Style the navigation bar links */
@@ -69,7 +78,6 @@ body {
   }
   
   .topnav a.active {
-    background-color: #240046;
     color: #B74AE6;
   }
   
@@ -111,7 +119,7 @@ body {
   
   div.eight-ball {
     background-color: black;
-    border: 1px solid black;
+    border: 2px solid white;
     border-radius: 50%;
     width: 300px;
     height: 300px;
@@ -122,7 +130,7 @@ body {
   
   div.answer {
     background-color: #333;
-    border: 1px solid #333;
+    border: 5px solid #333;
     border-radius: 50%;
     width: 50%;
     height: 50%;
@@ -137,13 +145,13 @@ body {
   
   p#answer {
     padding: 23px;
-    color: #243DCB;
+    color: white;
     letter-spacing: 2px;
-    font-size:18px;
+    font-size:14px;
   }
   
   #question {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     width: 400px;
     font-size:22px;
@@ -151,29 +159,31 @@ body {
 
   #info {
     font-size: 22px;
+    color: white;
   }
 
   /*box for contact me form*/
 form {
     border-radius: 5px;
-    background-color: red;
     padding: 10px;
     margin: auto;
+    align-items: center;
   }
   
   .col-25 {
     float: left;
     width: 25%;
-    margin-top: 6px;
+    margin-top: 12px;
+    color: white;
   }
   
   .col-75 {
     float: right;
     width: 75%;
-    margin-top: 6px;
+    margin-top: 12px;
+    color: white;
   }
 
-  
 .col-75 span {display:none;}
 .col-75.error span{
   display: block;

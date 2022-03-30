@@ -9,7 +9,7 @@
   }
 
   // Function for the 8-ball feature
-  
+
   var answers = ["It is certain", 
   "It is decidedly so", 
   "Without a doubt", 
@@ -46,3 +46,5 @@ answer.innerText = answers[num];
 }
 });
 };
+
+// Function for the submit button storage

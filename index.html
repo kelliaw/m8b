@@ -56,7 +56,48 @@
             </div>
         </div>
 
+        
+<!-- join our mailing list -->
+<div class="flex-container">
+    <h1 id="Join_Our_Mailing_List">Join Our Mailing List</h1>
+    <p>Concerned about the next Mercury Retrograde? Worried that you're one wrong question away from that promotion?
+      Sign up to receive special updates about the planetary forces and more, allowing you to focus on the perfect
+      question for the occasion!</p>
+    <h5>You can sign up for our mailing list here:</h5>
+    
+    <form name="myForm" action="/formProcessing.html" method="post" >
+      
+          <div class="row">
+              <div class="col-25">
+                  <label for="fname">First Name <span style="color: purple;">*</span></label>
+              </div>
+              <div class="col-75" class="error">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+                  <span>Please provide your first name</span>
+              </div>
+          </div>
 
+          <div class="col-25">
+            <label for="birthday">Birthday <span style="color: #BDE4A8;">*</span></label>
+        </div>
+        <div class="col-75" class="error">
+            <input type="date" id="birthday" name="birthday" value="05/18/1988" min="05/18/1900" max="05/18/2034" placeholder="05/18/1988" required>
+            <span>Birthday not recognized</span>
+        </div>
+          
+              <div class="col-25">
+                  <label for="email">Email <span style="color: #BDE4A8;">*</span></label>
+              </div>
+              <div class="col-75" class="error">
+                  <input type="text" id="email" name="email" placeholder="email@email.com" required>
+                  <span>Email format not recognized</span>
+              </div>
+       
+              <div class="col-25">
+              <a href=".html" class="butLink"><input type="button" onclick="validateForm" value="Subscribe" class="submitBtn"></a>
+              </div>
+              
+    </form>
 
 
     <script type="text/javascript" src="js/script.js"></script>

@@ -142,8 +142,6 @@ body {
     font-size:18px;
   }
   
-  /* add fade in here */
-  
   #question {
     margin: 20px;
     padding: 10px;
@@ -154,4 +152,34 @@ body {
   #info {
     font-size: 22px;
   }
+
+  /*box for contact me form*/
+form {
+    border-radius: 5px;
+    background-color: red;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  
+.col-75 span {display:none;}
+.col-75.error span{
+  display: block;
+  font-size: .75rem;
+  color: #ee2c2c;
+}
+
+
     

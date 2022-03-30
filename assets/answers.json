@@ -1,4 +1,5 @@
-[
+{
+    "Answers": [
     {
         "id": 1,
         "answer": "It is certain"
@@ -88,3 +89,4 @@
         "answer": "I'm just a ball, you know?"
     }
 ]
+}

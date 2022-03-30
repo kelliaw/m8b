@@ -2,6 +2,7 @@
 let express = require('express');
 let answerRepo = require('./repos/answerRepo');
 let app = express();
+let cors = require('cors');
 
 
 // Use the express Router and create application
@@ -9,6 +10,9 @@ let router = express.Router()
 
 // Configure middleware to support JSON data parsing in request object
 app.use(express.json());
+
+// COnfigure CORS
+app.use(cors());
 
 // Create GET to return a list of all answers
 router.get('/', function (req, res, next) {

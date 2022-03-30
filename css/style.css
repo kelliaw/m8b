@@ -8,11 +8,11 @@ body {
     font-weight: 400; 
     margin: 0; 
     margin-top: 50px;
-      
+    text-align: center;
   }
     
   h1 {
-    
+    text-shadow: 10px 10px 10px #DEE8F5;
     color: #9300F4;
     font-family: 'Shrikhand', cursive;
     letter-spacing: 15px;
@@ -23,17 +23,18 @@ body {
     
   h2 {
     font-weight: 100; 
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Oi', cursive;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     color: #9300F4;
-    
+    text-shadow: 2px 2px #DEE8F5;
   }
     
   h3 {
     color: #9300F4;
     font-family: 'Notable', sans-serif;
     letter-spacing: 1px;
+    font-size: 25px;
   }
   
   h5 {
@@ -45,7 +46,8 @@ body {
     font-family: 'Fredoka', sans-serif;
     font-weight: 400;
     font-style: italic;
-    color: white;
+    color: #DEE8F5;
+    font-size: 25px;
   }
   
   .flex-container {
@@ -64,11 +66,13 @@ body {
   .topnav a {
     float: left;
     display: block;
-    color: #B74AE6;
+    color: #9300F4;
+    text-shadow: 2px 2px #DEE8F5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    text-shadow: 156px 1px 17px white;
   }
       
   /* Change color on hover */
@@ -78,7 +82,8 @@ body {
   }
   
   .topnav a.active {
-    color: #B74AE6;
+    color: #9300F4;
+    text-shadow: 1px 1px 17px white;
   }
   
   .topnav .icon {
@@ -139,12 +144,14 @@ body {
   
   p#eight {
     font-size: 5em;
+    font-family: 'Oi', cursive;
     margin: 20% auto;
     color: white;
   }
   
   p#answer {
     padding: 23px;
+    font-family: 'Notable', sans-serif;
     color: white;
     letter-spacing: 2px;
     font-size:14px;

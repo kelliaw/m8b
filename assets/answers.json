@@ -1,92 +1,46 @@
 {
-    "Answers":[
+    "Information":[
     {
         "id": 1,
-        "answer": "It is certain"
+        "name": "Izabella Paula Zaman", 
+        "birthday": "04/19/1992",
+        "time": "09:32",
+        "place": "Louisville, Kentucky",
+        "email": "soizabella@nonise.com"
     },
     {
         "id": 2,
-        "answer": "It is decidedly so"
+        "name": "Grozdana Tünde Okafor", 
+        "birthday": "09/17/2003",
+        "time": "02:15",
+        "place": "Moyock, North Carolina",
+        "email": "moretunde@piftir.com"
     },
     {
         "id": 3,
-        "answer": "Without a doubt"
+        "name": "Carly Sayer", 
+        "birthday": "05/31/1985",
+        "time": "23:49",
+        "place": "Berkeley, Missouri",
+        "email": "carly18sayers@pickuplanet.com"
     },
     {
         "id": 4,
-        "answer": "Yes - definitely"
+        "name": "Miroslava Jayda Niklasson", 
+        "birthday": "05/13/1999",
+        "time": "11:07",
+        "place": "Port Richey, Florida",
+        "email": "zedioki7@esbuah.nl"
     },
     {
         "id": 5,
-        "answer": "You may rely on it"
-    },
-    {
-        "id": 6,
-        "answer": "As I see it, yes"
-    },
-    {
-        "id": 7,
-        "answer": "Most likely"
-    },
-    {
-        "id": 8,
-        "answer": "Outlook good"
-    },
-    {
-        "id": 9,
-        "answer": "Yes, no, yes"
-    },
-    {
-        "id": 10,
-        "answer": "Signs point to yes"
-    },
-    {
-        "id": 11,
-        "answer": "Don't count on it"
-    },
-    {
-        "id": 12,
-        "answer": "My reply is no"
-    },
-    {
-        "id": 13,
-        "answer": "My sources say no"
-    },
-    {
-        "id": 14,
-        "answer": "Outlook not so good"
-    },
-    {
-        "id": 15,
-        "answer": "Very doubtful"
-    },
-    {
-        "id": 16,
-        "answer": "Reply hazy, try again"
-    },
-    {
-        "id": 17,
-        "answer": "Ask again later"
-    },
-    {
-        "id": 18,
-        "answer": "Better not tell you now"
-    },
-    {
-        "id": 19,
-        "answer": "Cannot predict now"
-    },
-    {
-        "id": 20,
-        "answer": "Concentrate and ask again"
-    },
-    {
-        "id": 21,
-        "answer": "idk, follow ur heart :)"
-    },
-    {
-        "id": 22,
-        "answer": "I'm just a ball, you know?"
+        "name": "Rusticus Arnt Ó Marcaigh", 
+        "birthday": "03/10/1997",
+        "time": "08:43",
+        "place": "Abernathy, Texas",
+        "email": "eirikhs@lulukbuah.host"
     }
+    
+    
 ]
 }

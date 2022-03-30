@@ -28,7 +28,7 @@
   "Ask again later", 
   "Better not tell you now",
   "Cannot predict now", 
-  "Concentrate and ask again"];
+  "Concentrate and ask again", "I'm just a ball, you know?", "idk, follow ur heart :)"];
 
 window.onload = function() {
 var eight = document.getElementById("eight");

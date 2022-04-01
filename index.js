@@ -20,7 +20,7 @@ router.get('/', function (req, res, next) {
       res.status(200).json({
         "status": 200,
         "statusText": "OK",
-        "message": "All answers retrieved.",
+        "message": "All subscribers retrieved.",
         "data": data
       });
     }, function (err) {

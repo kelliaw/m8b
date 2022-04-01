@@ -28,77 +28,115 @@
 
 </head>
 
-<body>
-    <!-- perfectly working nav bar!!!!-->
+<body style="background-image: url('images/star.png');">
+
+    !-- perfectly working nav bar!!!!-->
     <div class="topnav" id="myTopnav">
         <a href="#Ask_a_Question" class="active">Ask a Question</a>
         <a href="#Join_Our_Mailing_List">Join our Mailing List</a>
         <a href="#History_of_the_Magic_8_Ball">History of the Magic 8 Ball</a>
-        <a href="#Contact_Me">Contact Me</a>
-        <a href="#Data">Data</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
         </a>
     </div>
 
     <!-- ask a question -->
-    <h1 id="Ask_a_Question">Ask a Question</h1>
-        <div id="content">
-            <div class="BallSearch">
-            <h2>Magic 8 Ball</h2>
-            <p id="info">Ask the Magic 8 Ball a question. When you are ready, click on it to see your fortune.</p>
-            <input type="text" id="question" /></div>
-            <div id="eight-ball" class="eight-ball">
-                <div class="answer">
-                    <p id="eight">8</p>
-                    <p id="answer"></p>
-                </div>
+    <div id="content">
+        <h1>Magic 8 Ball</h1>
+        <div class="BallSearch">
+            <h2>Ask a Question</h2>
+            <p id="info">Ask the Magic 8 Ball a question. When you are ready, click on the 8 to see your fortune.</p>
+            <input type="text" id="question" />
+        </div>
+        <div id="eight-ball" class="eight-ball">
+            <div class="answer">
+                <p id="eight">8</p>
+                <p id="answer"></p>
             </div>
         </div>
+        <button onClick="window.location.reload();">Would you like to ask again?</button>
+    </div>
 
-        
-<!-- join our mailing list -->
-<div class="flex-container">
-    <h1 id="Join_Our_Mailing_List">Join Our Mailing List</h1>
-    <p>Concerned about the next Mercury Retrograde? Worried that you're one wrong question away from that promotion?
-      Sign up to receive special updates about the planetary forces and more, allowing you to focus on the perfect
-      question for the occasion!</p>
-    <h5>You can sign up for our mailing list here:</h5>
-    
-    <form name="myForm" action="/formProcessing.html" method="post" >
-      
-          <div class="row">
-              <div class="col-25">
-                  <label for="fname">First Name <span style="color: purple;">*</span></label>
-              </div>
-              <div class="col-75" class="error">
-                  <input type="text" id="fname" name="firstname" placeholder="Your name" required>
-                  <span>Please provide your first name</span>
-              </div>
-          </div>
 
-          <div class="col-25">
-            <label for="birthday">Birthday <span style="color: #BDE4A8;">*</span></label>
+    <!-- join our mailing list -->
+    <div class="flex-container">e <h1 id="Join_Our_Mailing_List">Join Our Mailing List!</h1>
+        <h3>You can sign up for our mailing list here:</h3>
+        <p>Concerned about the next Mercury Retrograde? Worried that you're one wrong question away from that promotion?
+            Sign up to receive special updates about the planetary forces and more, catered to your specific birth chart
+            and allowing you to focus on the perfect
+            question for the occasion!</p>
+        <br><br>
+        <div class="countdown"></div>
+        <p>The next Mercury Retrograde will be here in...</p>
+
+        <p id="countdown"></p>
+        <p>Don't get left behind!</p>
+    </div>
+
+    <div class="flex-container-2">
+            <form id='register-form'>
+                <label for="name">Name <span style="color: white;">*</span></label>
+                <input type="text" placeholder="Your Name" required id="name">
+                <br><br>
+                <label for="email">Email <span style="color: white;">*</span></label>
+                <input type="email" placeholder="Email" required id="email">
+                <br><br>
+                <label for="birthday">Day of Birth <span style="color: white;">*</span></label>
+                <input type="date" placeholder="mm/dd/yyyy" required id="contacts">
+                <br><br>
+                <label for="place">Place of Birth <span style="color: white;">*</span></label>
+                <input type="text" placeholder="Nowhere, Kentucky" required id="place" >
+                <br><br>
+                <label for="time">Time of Birth <span style="color: white;">*</span></label>
+                <input type="time" placeholder="00:00" required id="time">
+                <br>
+                <br>
+                <br>
+                <input class="button" name="submit" type="submit" value="You won't regret this :)" onclick="submitData()" />        
+             </form>
+
+        </form>
+    </div>
+
+    <!-- history of the magic 8-ball -->
+    <div class="flex-container">
+        <h1 id="History_of_the_Magic_8_Ball">History of the Magic 8-Ball</h1>
+
+        <p>The Magic 8-Ball is a plastic sphere, made to look like an oversized eight-ball, that is used for
+            fortune-telling or seeking advice. It was invented in 1946 by Albert C. Carter and Abe Bookman and is
+            currently manufactured by Mattel. The user asks a yes–no question to the ball, then turns it over to reveal
+            an answer in a window on the ball.</p>
+        <p>The Magic 8-Ball is a hollow plastic sphere resembling a black-and-white 8-ball. Inside the ball, a
+            cylindrical reservoir contains a white plastic regular icosahedron die floating in approximately 100 ml
+            (3+1⁄2 US fl oz) of alcohol dyed dark blue. Each of the die's 20 faces has an affirmative, negative, or
+            non-committal statement printed in raised letters. These messages are read through a window on the ball's
+            bottom.</p>
+        <p>To use the ball, it must be held with the window initially facing down to allow the die to float within the
+            cylinder. After asking the ball a yes–no question, the user then turns the ball so that the window faces up.
+            The die floats to the top, and one face presses against the window; the raised letters displace the blue
+            liquid to reveal the message as white letters on a blue background. Although most users shake the ball
+            before turning it upright, the instructions warn against doing so to avoid white bubbles.</p>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="foot1">
+            <h3 style="font-size: 20x">&copy; 2021 by Kelli White Weaver</h3>
+            <h3 style="font-size: 20px"><a href="mailto:kelliwhiteweaver@gmail.com">kelliwhiteweaver@gmail.com</a></h3>
         </div>
-        <div class="col-75" class="error">
-            <input type="date" id="birthday" name="birthday" value="05/18/1988" min="05/18/1900" max="05/18/2034" placeholder="05/18/1988" required>
-            <span>Birthday not recognized</span>
+        <div class="foot2">
+            <h2><b style="font-size: 50px">Come and Follow Me...</style></b><br>
+                <a href="https://twitter.com/ms_whiteweaver" target="_blank"></a>
+                <i class="fab fa-twitter-square" style="color: #9300F4"></i>
+                <a href="https://www.linkedin.com/in/kelliwhiteweaver/" target="_blank">
+                    <i class="fab fa-linkedin" style="color: #9300F4"></i></a>
+                <a href="https://github.com/kelliaw/" target="_blank"><i class="fab fa-github-square"
+                        style="color: #9300F4"></i></i></i></a>
+            </h2>
         </div>
-          
-              <div class="col-25">
-                  <label for="email">Email <span style="color: #BDE4A8;">*</span></label>
-              </div>
-              <div class="col-75" class="error">
-                  <input type="text" id="email" name="email" placeholder="email@email.com" required>
-                  <span>Email format not recognized</span>
-              </div>
-       
-              <div class="col-25">
-              <a href=".html" class="butLink"><input type="button" onclick="validateForm" value="Subscribe" class="submitBtn"></a>
-              </div>
-              
-    </form>
+        </div>
 
+    </footer>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>

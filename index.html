@@ -35,8 +35,6 @@
         <a href="#Ask_a_Question" class="active">Ask a Question</a>
         <a href="#Join_Our_Mailing_List">Join our Mailing List</a>
         <a href="#History_of_the_Magic_8_Ball">History of the Magic 8 Ball</a>
-        <a href="#Contact_Me">Contact Me</a>
-        <a href="#Data">Data</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
         </a>
@@ -47,7 +45,7 @@
         <h1>Magic 8 Ball</h1>
         <div class="BallSearch">
             <h2>Ask a Question</h2>
-            <p id="info">Ask the Magic 8 Ball a question. When you are ready, click on it to see your fortune.</p>
+            <p id="info">Ask the Magic 8 Ball a question. When you are ready, click on the 8 to see your fortune.</p>
             <input type="text" id="question" />
         </div>
         <div id="eight-ball" class="eight-ball">
@@ -56,6 +54,7 @@
                 <p id="answer"></p>
             </div>
         </div>
+        <button onClick="window.location.reload();">Would you like to ask again?</button>
     </div>
 
 
@@ -74,54 +73,27 @@
         <p>Don't get left behind!</p>
     </div>
 
-    <div class="myForm">
-        <!--<form action="/formProcessing.html" method="post">-->
-            <div class="form"></div>
-            <label for="name">Name <span style="color: white;">*</span></label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-            <span>Please provide your name</span>
-            <br>
-            <label for="birthday">Day of Birth <span style="color: white;">*</span></label>
-            <input type="date" id="birthday" name="birthday" min="05/18/1900" max="05/18/2034" placeholder="05/18/1988"
-                required>
-            <span>Birthday not recognized</span>
-            <br>
-            <label for="time">Time of Birth <span style="color: white;">*</span></label>
-            <input type="time" id="time" name="time" min="00:00" max="24:00" placeholder="9:32" required><span>Time not
-                recognized</span>
-            <br>
-            <label for="time">Place of Birth <span style="color: white;">*</span></label>
-            <input type="text" id="place" name="place" placeholder="Nowhere, Kentucky" required><span>Location not
-                recognized</span>
-            <br>
-            <label for="email">Email <span style="color: white;">*</span></label>
-            <input type="text" id="email" name="email" placeholder="email@email.com" required>
-            <span>Email format not recognized</span>
-            <br>
-            <a href=".html" class="butLink"><input type="button" onclick="validateForm" value="Subscribe"
-                    class="submitBtn"></a>
-
-            <button onclick()="getAllSubscribers">Get All Subscribers</button>
-
-            <script>
-                'use strict'
-                const URL = "http://localhost:2000/api/";
-                function getAllSubscribers() {
-                    console.log("Get All")
-
-                    let req = new XMLHttpRequest();
-                    req.onreadystatechange = function () {
-                        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-                            let response = JSON.parse(this.response);
-                            console.log(response.status);
-                            console.log(response.statusText);
-                            console.log(response.data);
-                        }
-                    };
-                    req.open("Get", URL);
-                    req.send();
-                }
-            </script>
+    <div class="flex-container-2">
+            <form id='register-form'>
+                <label for="name">Name <span style="color: white;">*</span></label>
+                <input type="text" placeholder="Your Name" required id="name">
+                <br><br>
+                <label for="email">Email <span style="color: white;">*</span></label>
+                <input type="email" placeholder="Email" required id="email">
+                <br><br>
+                <label for="birthday">Day of Birth <span style="color: white;">*</span></label>
+                <input type="date" placeholder="mm/dd/yyyy" required id="contacts">
+                <br><br>
+                <label for="place">Place of Birth <span style="color: white;">*</span></label>
+                <input type="text" placeholder="Nowhere, Kentucky" required id="place" >
+                <br><br>
+                <label for="time">Time of Birth <span style="color: white;">*</span></label>
+                <input type="time" placeholder="00:00" required id="time">
+                <br>
+                <br>
+                <br>
+                <input class="button" name="submit" type="submit" value="You won't regret this :)" onclick="submitData()" />        
+             </form>
 
         </form>
     </div>
@@ -149,17 +121,17 @@
     <!-- footer -->
     <footer>
         <div class="foot1">
-            <b style="font-size: 16px">&copy; 2021 by Kelli White Weaver</b>
-            <b style="font-size: 16px"><a href="mailto:kelliwhiteweaver@gmail.com">kelliwhiteweaver@gmail.com</a>
+            <h3 style="font-size: 20x">&copy; 2021 by Kelli White Weaver</h3>
+            <h3 style="font-size: 20px"><a href="mailto:kelliwhiteweaver@gmail.com">kelliwhiteweaver@gmail.com</a></h3>
         </div>
         <div class="foot2">
-            <h2><b style="font-size: 16px">Follow Me...</style></b><br>
+            <h2><b style="font-size: 50px">Come and Follow Me...</style></b><br>
                 <a href="https://twitter.com/ms_whiteweaver" target="_blank"></a>
-                <i class="fab fa-twitter-square" style="color: #274029"></i>
+                <i class="fab fa-twitter-square" style="color: #9300F4"></i>
                 <a href="https://www.linkedin.com/in/kelliwhiteweaver/" target="_blank">
-                    <i class="fab fa-linkedin" style="color: #274029"></i></a>
+                    <i class="fab fa-linkedin" style="color: #9300F4"></i></a>
                 <a href="https://github.com/kelliaw/" target="_blank"><i class="fab fa-github-square"
-                        style="color: #274029"></i></i></i></a>
+                        style="color: #9300F4"></i></i></i></a>
             </h2>
         </div>
         </div>

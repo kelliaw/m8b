@@ -90,29 +90,6 @@ body {
     display: none;
   }
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 772px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 772px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left; 
-    }
-}
-
 /* Style the 8-ball */
 #content { 
     width: 600px; 
@@ -134,7 +111,7 @@ body {
   }
   
   div.answer {
-    background-color: #333;
+    background-color: white;
     border: 5px solid rgb(20, 18, 18);
     border-radius: 50%;
     width: 50%;
@@ -147,13 +124,13 @@ body {
     font-size: 3.5em;
     font-family: 'Oi', cursive;
     margin: 20% auto;
-    color: white;
+    color: black;
   }
   
   p#answer {
     padding: 23px;
     font-family: 'Notable', sans-serif;
-    color: white;
+    color: blue;
     letter-spacing: 2px;
     font-size:14px;
   }
@@ -171,13 +148,91 @@ body {
   }
 
   /*box for contact me form*/
-.myForm {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: aqua;
-  }
 
-.form {
-  text-align: right;
+.flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  color: white;
 }
-    
+
+ /*footer style*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+  
+  /* Responsive hamburger menu (.icon) */
+  @media screen and (max-width: 772px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    /* Hamburger click */
+      .topnav.responsive {position: relative;}
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left; 
+      }
+
+/* 8 ball style */
+#content { 
+  width: auto; 
+  margin: 0 auto; 
+  margin-top: 0 auto;       
+  text-align: center; 
+  font-weight: 100;
+}
+  }
+/* body style */
+@media screen and (max-width: 772px) {
+h1 {
+  text-shadow: 10px 10px 10px #DEE8F5;
+  color: #9300F4;
+  font-family: 'Shrikhand', cursive;
+  letter-spacing: 15px;
+  font-weight: 100; 
+  font-size: 60px;
+  text-align: center;
+}
+  
+h2 {
+  font-weight: 100; 
+  font-size: 25px;
+  font-family: 'Oi', cursive;
+  letter-spacing: 10px;
+  color: #9300F4;
+  text-shadow: 2px 2px #DEE8F5;
+}
+  
+h3 {
+  color: #9300F4;
+  font-family: 'Notable', sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+h5 {
+  font-family: 'Fredoka', sans-serif;
+  color: white;
+}
+  
+ul, li, p {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #DEE8F5;
+  font-size: 15px;
+}
+}
+
+

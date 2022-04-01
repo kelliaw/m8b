@@ -47,9 +47,6 @@ answer.innerText = answers[num];
 });
 };
 
-// Function for the submit button storage
-
-
 
 // Set the date to countdown
 var countDownDate = new Date("May 10, 2022 00:00:00").getTime();

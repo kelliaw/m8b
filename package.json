@@ -14,5 +14,14 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelliaw/m8b.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kelliaw/m8b/issues"
+  },
+  "homepage": "https://github.com/kelliaw/m8b#readme"
 }

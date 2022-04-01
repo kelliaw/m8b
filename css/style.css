@@ -135,15 +135,16 @@ body {
   
   div.answer {
     background-color: #333;
-    border: 5px solid #333;
+    border: 5px solid rgb(20, 18, 18);
     border-radius: 50%;
     width: 50%;
     height: 50%;
     margin: 25% auto;
+
   }
   
   p#eight {
-    font-size: 5em;
+    font-size: 3.5em;
     font-family: 'Oi', cursive;
     margin: 20% auto;
     color: white;
@@ -170,33 +171,13 @@ body {
   }
 
   /*box for contact me form*/
-form {
+.myForm {
     border-radius: 5px;
     padding: 10px;
-    margin: auto;
-    align-items: center;
-  }
-  
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 12px;
-    color: white;
-  }
-  
-  .col-75 {
-    float: right;
-    width: 75%;
-    margin-top: 12px;
-    color: white;
+    background-color: aqua;
   }
 
-.col-75 span {display:none;}
-.col-75.error span{
-  display: block;
-  font-size: .75rem;
-  color: #ee2c2c;
+.form {
+  text-align: right;
 }
-
-
     

@@ -125,3 +125,7 @@ app.use('/api/', router);
 var server = app.listen(2000, function () {
   console.log('Node server is running on http://localhost:2000..');
 });
+
+// Configure axios
+const axios = require('axios')
+console.log(axios)
